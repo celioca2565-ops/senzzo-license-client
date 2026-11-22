@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "senzzo-license-client"
+version = "0.1.0"
+description = "Client de validação de licença consumido pelos produtos Senzzo (fala com o license-server-v2)"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx",
+    "asyncpg",
+]
+
+[tool.setuptools.packages.find]
+include = ["senzzo_license_client*"]
